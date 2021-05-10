@@ -4,5 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: aqua;
+  background-color: #faf3f3;
+}
+
+/* navbar  */
+.navbar {
+  background-color: #a7bbc7;
+  color: #e1e5ea;
 }
