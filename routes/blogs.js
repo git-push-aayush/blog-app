@@ -8,6 +8,8 @@ router.get('/new', (req, res) => {
 
 router.get('/edit/:id', async (req, res) => {
   const blog = await Blog.findById(req.params.id);
+  //console.log(blog.description);
+  //console.log(blog.markdown);
   res.render('blogs/edit', { blog: blog });
 });
 

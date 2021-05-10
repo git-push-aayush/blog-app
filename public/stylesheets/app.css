@@ -9,6 +9,12 @@ body {
 
 /* navbar  */
 .navbar {
-  background-color: #a7bbc7;
+  background-color: white;
   color: #e1e5ea;
+  padding-left: 30px;
+}
+
+.logo{
+  height: 50px;
+  width: 120px;
 }
