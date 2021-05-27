@@ -1,3 +1,5 @@
+// This is the mongodb schema for Blog data
+
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 const marked = require('marked');
@@ -32,6 +34,8 @@ const blogSchema = new mongoose.Schema({
     require: true,
   },
 });
+
+// some validation and modification in data before Inserting into DB
 blogSchema.pre('validate', function (next) {
   if (this.title) {
     this.slug = slugify(this.title, { lower: true, strict: true });

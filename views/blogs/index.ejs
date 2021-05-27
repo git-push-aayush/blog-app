@@ -20,19 +20,7 @@
             </div>
 
             <div class="card-text mb-2"><%= blog.description %></div>
-          </div>
-          <div class="card-footer">
-            <a href="/blogs/<%= blog.slug %>" class="btn btn-primary"
-              >Read More</a
-            >
-            <a href="/blogs/edit/<%= blog.id %>" class="btn btn-info">Edit</a>
-            <form
-              action="/blogs/<%=blog.id%>?_method=DELETE"
-              method="POST"
-              class="d-inline"
-            >
-              <button class="btn btn-danger" type="submit">Delete</button>
-            </form>
+            <a href="/blogs/<%= blog.slug %>" class="">Read More</a>
           </div>
         </div>
         <% }); %>

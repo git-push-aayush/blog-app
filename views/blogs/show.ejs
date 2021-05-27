@@ -13,9 +13,16 @@
       </div>
       <a href="/" class="btn btn-secondary">All Blogs</a>
       <a href="/blogs/edit/<%= blog.id %>" class="btn btn-info">Edit</a>
+      <form
+        action="/blogs/<%=blog.id%>?_method=DELETE"
+        method="POST"
+        class="d-inline"
+      >
+        <button class="btn btn-danger" type="submit">Delete</button>
+      </form>
       <div class="card mt-3">
-        <div class="card-body   shadow rounded "><%- blog.sanitizedHtml %></div>
-        </div>
+        <div class="card-body shadow rounded"><%- blog.sanitizedHtml %></div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
